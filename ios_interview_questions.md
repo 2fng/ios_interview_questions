@@ -28,6 +28,7 @@ iOS interview questions order by timestamp
 | ------ | ------ |
 | Ra mắt năm 2014 | Ra mắt năm 1984 |
 | Syntax đơn giản, dễ tiếp cận | Syntax phức tạp , ảnh hưởng bởi Smalltalk|
+| Static type (Cần define kiểu dữ liệu khi khai báo biến) - Compile time |  Dynamic type - Run time|
 | Tối ưu hoá cho các thiết bị phần cứng Appple,  nhanh hơn 2.6 lần so với Objective-C | Ổn định |
 | Tự động quản lý bộ nhớ thông qua ARC  | Sử dụng ARC hoặc MRR (Manual Retain-Release -  Lập trình viên để ý khi nào object dùng xong và release nó - Có khả năng gây memory leak cao) |
 | Có thể dùng để lập trình app từ iOS 7 trở đi| Support các version cũ hơn |
