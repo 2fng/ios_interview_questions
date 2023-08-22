@@ -22,8 +22,6 @@ iOS interview questions order by timestamp
 
 ## Anwsers
 
-<br></br>
-
 ### Swift khác Objc như thế nào?
 
 | Swift | Objective-C |
@@ -37,6 +35,8 @@ iOS interview questions order by timestamp
 | Hiện tại Swift là lựa chọn được nhiều người dùng cho các dự án mới hơn Objective-C | Phổ biến hơn trong quá khứ, các dự án cũ | 
 |Sử dụng framework UIKit và SwiftUI| Sử dụng UIKit|
 
+<br></br>
+
 ### So sánh class với struct, enum
 |  | Class | Struct | Enum |
 |---|---|---|---|
@@ -49,6 +49,8 @@ iOS interview questions order by timestamp
 | **Có thể Extend** | Có | Có | Có |
 | **Có thể hàm deinit** | Có | Không | Không |
 
+<br></br>
+
 ### ViewController Life cycle
 ![ViewController life cycle](https://images.viblo.asia/c7a3245c-6d21-4cc1-b914-d6948a91c6c2.jpg "ViewController life cycle")
 1. `loadView()`: Được gọi khi view controller đã được cấp phát bộ nhớ nhưng  view hierrachy  chưa được load vào bộ nhớ
@@ -59,6 +61,8 @@ iOS interview questions order by timestamp
 6. `viewDidLayoutSubviews()`: Được gọi sau khi view controller lay out các subviews của view tổng
 7. `viewDidAppear(_:)`: Được gọi khi view controller đã hoàn thành các công việc trên và hiển thị view 
 8. `viewWillDisappear(_:)`: Được gọi trước khi các thành phần thuộc view hierrachy của view controller chuẩn bị  deallocate khỏi bộ nhớ
+
+<br></br>
 
 ### So sánh weak, unowned
 > The overriding design goal for Markdown's
