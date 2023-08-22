@@ -74,6 +74,18 @@ iOS interview questions order by timestamp
 
 <br></br>
 
+###  Sqlite, CoreData, Realm
+
+| | SQLite | Core Data | Realm |
+|---|---|---|---|
+| **Định nghĩa** | SQLite là một thư viện cho phép lưu trữ  local trên thiết bị. Cho phép lập trình viên truy cập, setup   database dễ dàng hơn so với MySQL hay SQL server | Core Data là framework của Apple phát triển, cho phép lưu trữ local và được build trên nền tảng SQLite.| Realm là giải pháp open source  đưa ra giải pháp cho việc lưu dữ liệu local |
+| **Platform Support** | Support nhiều nền tảng | Chỉ sản phẩm của Apple | Hỗ trợ cả Android và iOS  |
+| **Ease of Use** | Cần viết SQL query để tương tác với database | Tương tác với database thông qua nhiều phương thức  được định nghĩa ở bậc cao chứ không cần  trực tiếp làm việc với SQL  | Tương tự như Core Data|
+| **Performance** | Nhanh| Nhanh hơn SQLite với các tác vụ nặng (Do có cơ chế cache)  tuy nhiên tốn nhiều tài nguyên hơn SQLite | Nhanh hơn cả SQLite và Core Data|
+
+<br></br>
+
+### Protocol là gì? Cách dùng.
 > The overriding design goal for Markdown's
 > formatting syntax is to make it as readable
 > as possible. The idea is that a
