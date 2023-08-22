@@ -90,7 +90,32 @@ iOS interview questions order by timestamp
 - Định nghĩa các properties và methods mà các class, struct, enum khi conform phải tự khai báo
 - Có thể extend
 - Có thể được coi như một kiểu dữ liệu
-- Có thể được dùng để phục vụ cho các mục đích như Delegate, Dependency Injection,...
+- Có thể được dùng để phục vụ cho các mục đích như  một  interface, Delegate, Dependency Injection,...
+
+_Ví dụ ứng dụng Protocol như một interface_
+```sh
+protocol SwitchType {
+    var name: String { get set }
+    var status: Bool { get }
+    mutating func toggle()
+}
+
+class Switch: SwitchType {
+    var name: String
+    var status = false
+    
+    init(name: String) {
+        self.name = name
+    }
+    
+    func toggle() {
+        print("Status\nBefore: \(self.status)")
+        self.status = !status
+        print("After: \(self.status)")
+    }
+}
+```
+<br></br>
 
 ### GCD, Queue type, NSOperation, async await
 > The overriding design goal for Markdown's
