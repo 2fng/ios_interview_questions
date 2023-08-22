@@ -3,8 +3,6 @@
 iOS interview questions order by timestamp
 
 # 22/08/2023
-|||
-| ------ | ------ |
 ## Questions
 
 1/ Swift khác Objc như thế nào?
