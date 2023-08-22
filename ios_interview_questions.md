@@ -218,6 +218,38 @@ Sau khi dùng:
 
 <br></br>
 
+## Git flow, Merge vs Rebase, fix confict
+**Git flow hiện tại đang follow**
+![Git flow](https://dochub.com/tunghuason/r4D6EkZVZJ6Gxd3VpQXW7O/screenshot-2023-08-22-at-19-27-54-png "Git flow")
+
+**Rebase vs Merge**
+- Đều có chung mục đích kết hợp sự thay đổi  giữa nhánh này với nhánh kia
+- Git merge lấy thay đổi của nhánh này, apply vào nhánh kia rồi tạo commit mới
+- Git rebase lấy thay đổi của nhánh này **ghi đè** lên đầu của nhánh kia, tạo ra một  cây commit liên tục 
+=> Việc dùng git merge an toàn hơn, tuy nhiên git rebase lại đưa ra commit tree gọn gàng, sạch đẹp hơn
+
+**Fix conflict**
+- Muốn fix conflict git cần xét rất nhiều yếu tố
+1. Code gây conflict là của mình hay của người khác? Nếu của người khác phải cùng họ bàn về tính logic (nếu cần) để giữ phần code hoặc kết hợp cả 2 sao cho hiệu quả
+2. Code gây conflict có ảnh hưởng nhiều về mặt logic không? Nếu có phải có report đầy đủ để giữ **evidence** ,phòng cho việc sau này cần quay lại dễ tracking
+3. Một số tool dùng để fix conflict: SourceTree, Android Studio, Terminal, Xcode
+
+<br></br>
+
+## Triển khai sprint trong Aglie
+Scrum là một framework rất linh hoạt có hệ tư tưởng Agile, để triển khai một sprint gồm rất nhiều yếu tố, và có thể cô đọng lại thành các bước cơ bản sau:
+1. Sprint planning: Xác định scope của sprint, mục đích của sprint, có thể đạt được điều gì và làm thế nào để đạt được điều đó trong và sau sprint. Ngoài ra sau khi xác định scope  và nguồn lựccó thể  xác định độ dài của sprint từ 2-4 tuần tuỳ scope. (Sử dụng Product Backlog và requirement đưa tới để xác định scope)
+2. Sau khi planning xong ta có sprint backlog. Lúc này cần tool tracking task (redmine, jira, trello,...) và nếu có thể là một sheet excel để theo dõi tổng quan quá trình làm task của development team cùng với burndown chart để xem tính khả thi của sprint (Nếu có xu hướng không thành công cần báo sớm với các bên liên quan)
+3. Khi đã chuẩn bị đủ Planning, Sprint Backlog, file quản lý tiến hành Implement và chạy sprint
+4. Trong khoảng thời gian sprint chạy, mỗi ngày cần chọn ra một giờ để daily meeting  (Trả lời 3 câu hỏi: Hôm qua làm gì? Có gặp khó khăn gì không? Hôm nay làm gì?) Lưu ý 1 daily meeting chỉ diễn ra 15 phút
+5. Đến giai đoạn cuối sprint, tổ chức sprint review để  deliver những gì làm được trong sprint cho khách hàng, PO xem
+6. Sau buổi sprint review sẽ đến sprint retrospective để team review toàn bộ sprint vừa qua, nêu ra những điểm tốt để phát huy, điểm trừ cần cải thiện và đóng góp ý kiến để sprint sau thành công hơn
+7. kết thức một sprint. Sau đó lại bắt đầu vòng lặp với sprint planning
+
+<br></br>
+
+## MVVM, MVP, VIPER
+
 Dillinger uses a number of open source projects to work properly:
 
 - [AngularJS] - HTML enhanced for web apps!
