@@ -5,20 +5,20 @@ iOS interview questions order by timestamp
 # 22/08/2023
 ## Questions
 
-- Swift khác Objc như thế nào?
-- So sánh class với struct, enum
-- ViewController Life cycle
-- So sánh weak, unowned
-- Sqlite, CoreData, Realm
-- Protocol là gì? Cách dùng.
-- GCD, Queue type, NSOperation, async await
-- URLSession vs Alamofire
-- Cách config firebase service,
-- Cách config notification,
-- Git flow, Merge vs Rebase, fix confict
-- Triển khai sprint trong Aglie ntn
-- MVVM, MVP, VIPER -> Mục đích, cách dùng
-- Denpendency Injection -> Khái niệm
+1.  Swift khác Objc như thế nào?
+2.  So sánh class với struct, enum
+3. ViewController Life cycle
+4. So sánh weak, unowned
+5. Sqlite, CoreData, Realm
+6. Protocol là gì? Cách dùng.
+7. GCD, Queue type, NSOperation, async await
+8. URLSession vs Alamofire
+9. Cách config firebase service,
+10. Cách config notification,
+11. Git flow, Merge vs Rebase, fix confict
+12. Triển khai sprint trong Aglie ntn
+13. MVVM, MVP, VIPER -> Mục đích, cách dùng
+14.  Denpendency Injection -> Khái niệm
 
 ## Anwsers
 
@@ -48,7 +48,17 @@ iOS interview questions order by timestamp
 | **Có thể hàm deinit** | Có | Không | Không |
 
 ### ViewController Life cycle
+![ViewController life cycle](https://images.viblo.asia/c7a3245c-6d21-4cc1-b914-d6948a91c6c2.jpg "ViewController life cycle")
+1. `loadView()`: Được gọi khi view controller đã được cấp phát bộ nhớ nhưng  view hierrachy  chưa được load vào bộ nhớ
+2. `loadViewIfNeeded()`: Được gọi khi view của view controller vẫn chưa được load 
+3. `viewDidLoad()`: Được gọi khi cả view controller và view hierrachy của nó đã được load vào bộ nhớ 
+4. `viewWillAppear(_:)`: Được gọi trước khi các thành phần của view controller xuất hiện trên màn 
+5. `viewWillLayoutSubviews()`: Được gọi trước khi view controller lay out các subviews của view tổng
+6. `viewDidLayoutSubviews()`: Được gọi sau khi view controller lay out các subviews của view tổng
+7. `viewDidAppear(_:)`: Được gọi khi view controller đã hoàn thành các công việc trên và hiển thị view 
+8. `viewWillDisappear(_:)`: Được gọi trước khi các thành phần thuộc view hierrachy của view controller chuẩn bị  deallocate khỏi bộ nhớ
 
+### So sánh weak, unowned
 > The overriding design goal for Markdown's
 > formatting syntax is to make it as readable
 > as possible. The idea is that a
