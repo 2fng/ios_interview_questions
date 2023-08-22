@@ -34,6 +34,21 @@ iOS interview questions order by timestamp
 | Có thể dùng để lập trình app từ iOS 7 trở đi| Support các version cũ hơn |
 | Hiện tại Swift là lựa chọn được nhiều người dùng cho các dự án mới hơn Objective-C | Phổ biến hơn trong quá khứ, các dự án cũ | 
 |Sử dụng framework UIKit và SwiftUI| Sử dụng UIKit|
+
+### So sánh class với struct, enum
+|  | Class | Struct | Enum |
+|---|---|---|---|
+| **Định nghĩa** | Đối tượng hoá vấn đề  để giải quyết  |  Đối tượng hoá vấn đề  để giải quyết   | Là tập hợp một số phần tử được liệt kê và cố định |
+| **Kiểu dữ liệu** | Reference | Value | Value |
+| **Nơi lưu dữ liệu** | Heap | Stack | Stack |
+| **Có khả năng kế thừa** | Có | Không (Tuy nhiên vẫn có thể conform  Protocol) | Không (Tuy nhiên vẫn có thể conform  Protocol) |
+| **Có thể conform Protocol** | Có | Có | Có |
+| **Có properties, method** | Có | Có | Có |
+| **Có thể Extend** | Có | Có | Có |
+| **Có thể hàm deinit** | Có | Không | Không |
+
+### ViewController Life cycle
+
 > The overriding design goal for Markdown's
 > formatting syntax is to make it as readable
 > as possible. The idea is that a
