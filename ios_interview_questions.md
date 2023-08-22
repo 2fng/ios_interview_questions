@@ -202,6 +202,8 @@ Sau khi dùng:
 5. Thêm FirebaseApp.configure() vào AppDelegate
 6. Dùng Firebase ở các file cần thiết
 
+<br></br>
+
 ## Cách config notification (UNUserNotificationCenter, UIUserNotificationSettings, FirebaseMessaging)
 1. Xin quyền gửi noti cho người dùng ở AppDelegate 
 2. Bật Push Notification và Background ở Capabilities
@@ -210,6 +212,8 @@ Sau khi dùng:
 4. Check fcm token ở AppDelegate
 5. Đăng ký nhận push
 6. Test
+
+<br></br>
 
 Dillinger uses a number of open source projects to work properly:
 
