@@ -185,8 +185,16 @@ Sau khi dùng:
     await nhan(a: A, b: B)
     print("2 kết quả nè: \(Cong) & \(Nhan)")
 ```
-## Tech
+## URLSession vs Alamofire
+- Cả URLSession và Alamofire đều mang chung một công dụng là hỗ trợ việc networking trong Swift
+- URLSession là công cụ thuộc Foundation (Do Apple phát triển), trái lại Alamofire lại là thư viện bên thứ ba
+- Alamofire tỏ ra vượt trội hơn về độ ngắn gọn và  sạch sẽ đối với tác vụ nhẹ như các request call không phức tạp
+- Alamofire còn kết hợp rất tốt với  các thư viện phổ biến như ObjectMapper, RxSwift ; Kèm theo những template có sẵn khiến cho việc networking nhanh gọn và dễ dàng nên tới nay vẫn có nhiều người dùng
+- Đối với các trường hợp scope app không có networking quá phức tạp,  nhiều người vẫn ưu tiền dùng Alamofire vì sự tiện dụng. Tuy nhiên vì là thư viện bên thứ ba nên Alamofire đem lại khá nhiều rủi ro ví dụ như khi update iOS, có nguy cơ thư viện không phát triển, phát triển chậm,...
 
+<br></br>
+
+## Cách config firebase service
 Dillinger uses a number of open source projects to work properly:
 
 - [AngularJS] - HTML enhanced for web apps!
