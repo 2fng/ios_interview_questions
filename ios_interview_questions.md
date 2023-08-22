@@ -185,6 +185,9 @@ Sau khi dùng:
     await nhan(a: A, b: B)
     print("2 kết quả nè: \(Cong) & \(Nhan)")
 ```
+
+<br></br>
+
 ## URLSession vs Alamofire
 - Cả URLSession và Alamofire đều mang chung một công dụng là hỗ trợ việc networking trong Swift
 - URLSession là công cụ thuộc Foundation (Do Apple phát triển), trái lại Alamofire lại là thư viện bên thứ ba
