@@ -250,6 +250,10 @@ Scrum là một framework rất linh hoạt có hệ tư tưởng Agile, để t
 <br></br>
 
 ## MVVM, MVP, VIPER
+MVVM, VIPER và MVP là ba kiến trúc thường thấy trong mảng lập trình iOS.  Kiến trúc được dùng để phân tầng , tách biệt để dễ dàng hình dung, bảo trì và phát triển. 
+- **MVVM** (Model - View - View Model): Có 3 thành phần chính. Model đại diện cho data-model, view đảm nhiệm phần hiển thị và nhận sự kiện,  và bắn sự kiện cho viewModel xử lý. iewModel xử lý các sự kiện,  nhận từ view thông qua bindingcác logic của app.
+- **VIPER** (View - Interactor - Presenter - Entity - Router): Giống với MVVM, tuy nhiên Router xử lý các việc liên quan đến đổi màn, navgigation,... Entity chỉ là các cấu trúc dữ liệu chứ không  đảm nhiệm thêm việc access từ logic như Model ở MVVM, phần này được Interactor xử lý.
+- **MVP** (Model - View - Presenter): Chia tách View và Model (Vẫn có nhiệm vụ giống MVVM) và phần xử lý logic, phần logic hiển thị và update view đều được Presenter xử lý.
 
 Dillinger uses a number of open source projects to work properly:
 
