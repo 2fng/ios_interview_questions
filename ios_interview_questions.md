@@ -22,6 +22,8 @@ iOS interview questions order by timestamp
 
 ## Anwsers
 
+<br></br>
+
 ### Swift khác Objc như thế nào?
 
 | Swift | Objective-C |
