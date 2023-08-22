@@ -195,6 +195,22 @@ Sau khi dùng:
 <br></br>
 
 ## Cách config firebase service
+1. Tạo project Firebase
+2. Đăng ký app (BundleID, tên app, app store id nếu có)
+3. Tải file GoogleService-Info.plist nhận được sau khi đăng ký và đưa vào root folder của project (Ngang hàng với Info.plist)
+4. Add Firebase SDK vào app (SPM, cocoapods, carthage)
+5. Thêm FirebaseApp.configure() vào AppDelegate
+6. Dùng Firebase ở các file cần thiết
+
+## Cách config notification (UNUserNotificationCenter, UIUserNotificationSettings, FirebaseMessaging)
+1. Xin quyền gửi noti cho người dùng ở AppDelegate 
+2. Bật Push Notification và Background ở Capabilities
+3. Lên firebase -> Settings -> Up file .p12 (APNs certìicate)
+3. Đăng ký nhận remote notification
+4. Check fcm token ở AppDelegate
+5. Đăng ký nhận push
+6. Test
+
 Dillinger uses a number of open source projects to work properly:
 
 - [AngularJS] - HTML enhanced for web apps!
