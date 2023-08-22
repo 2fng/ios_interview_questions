@@ -118,18 +118,73 @@ class Switch: SwitchType {
 <br></br>
 
 ### GCD, Queue type, NSOperation, async await
-> The overriding design goal for Markdown's
-> formatting syntax is to make it as readable
-> as possible. The idea is that a
-> Markdown-formatted document should be
-> publishable as-is, as plain text, without
-> looking like it's been marked up with tags
-> or formatting instructions.
+Trước khi tìm hiểu các vấn đề trên, ta cần biết về  khái niệm Concurrency
+> Là khả năng giải quyết nhiều công việc một lúc
+> và các công việc đó không nhất thiết phải xảy ra tại một thời điểm
 
-This text you see here is *actually- written in Markdown! To get a feel
-for Markdown's syntax, type some text into the left window and
-watch the results in the right.
+**=> Lập trình bất đồng bộ giúp cho app hoạt động mượt mà, tiết kiệm thời gian và tối ưu tài nguyên**
+Ta có thể lập trình bất đồng bộ trong iOS thông qua nhiều cách, nhiều công cụ, trong đó có thể kể đến GCD, NSOperation
 
+**GCD**
+* GCD là API cấp thấp quản lý thực hiện các tác vụ 
+* Cải thiện hiệu năng app
+* Tương tác với thread để xử lý task
+* Người dùng tương tác với Queue của GCD để handle tác vụ
+
+**Queue Type**
+Có 2 loại queue chính:
+* Main queue: Là serial queue, sử dụng main thread
+* Global queue: Có thể concurrent hoặc serial queue tuỳ ý, được sử dụng các thread không phải main thread và gồm 4 loại QoS có sẵn định nghĩa hoặc người dùng có thể custom. Sau đây là các QoS được sắp xếp độ ưu tiên từ cao xuống thấp:
+1. userInteractive
+2. userInitiated
+3. utility
+4. background
+
+**NSOperation**
+Build dựa trên GCD, có cải tiến hơn khi có thể thêm sự phụ thuộc giữa các operation, tái sử dụng, huỷ hoặc dừng chúng.
+Có 4 state chính của một operation: isReady -> isExecuting -> isCancelled hoặc isFinished.
+Ngoài ra có thể xác định operation có đang chạy bất đồng bộ hay không thông qua property isConcurent và isAsynchronous.
+
+**Async/Await**
+`async/await` là từ khoá mới được thêm vào Swift 5.5. async/await được thêm vào nhằm rút gọn code completion trước đây.
+Trước khi dùng `async/await`
+```sh
+let A = 10
+let B = 20
+// Gọi đơn giản
+cong(a: A, b: B) { result in
+    print("cộng OKE nè : \(result)")
+}
+// Gọi lồng nhau
+cong(a: A, b: B) { result in
+    print("cộng OKE nè : \(result)")
+    
+    nhan(a: A, b: B) { result in
+        print("nhân OKE nè : \(result)")
+        
+        cong(a: A, b: B) { result in
+            print("cộng OKE 2 nè : \(result)")
+            
+            nhan(a: A, b: B) { result in
+                print("nhân OKE 2 nè : \(result)")
+            }
+        }
+    }
+}
+```
+
+Sau khi dùng
+```sh
+    let A = 10
+    let B = 20
+    print("... #1")
+    await cong(a: A, b: B)
+    print("... #2")
+    await nhan(a: A, b: B)
+    await cong(a: A, b: B)
+    await nhan(a: A, b: B)
+    print("2 kết quả nè: \(Cong) & \(Nhan)")
+```
 ## Tech
 
 Dillinger uses a number of open source projects to work properly:
