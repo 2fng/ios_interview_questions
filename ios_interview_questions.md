@@ -221,6 +221,7 @@ Sau khi dùng:
 ## Git flow, Merge vs Rebase, fix confict
 **Git flow hiện tại đang follow**
 ![Git flow](https://dochub.com/tunghuason/r4D6EkZVZJ6Gxd3VpQXW7O/screenshot-2023-08-22-at-19-27-54-png "Git flow")
+https://drive.google.com/file/d/118ehb09RJ-nlb5Yxu6jRBdHohCbO_pd6/view
 
 **Rebase vs Merge**
 - Đều có chung mục đích kết hợp sự thay đổi  giữa nhánh này với nhánh kia
