@@ -147,7 +147,7 @@ Ngoài ra có thể xác định operation có đang chạy bất đồng bộ h
 
 **Async/Await**
 `async/await` là từ khoá mới được thêm vào Swift 5.5. async/await được thêm vào nhằm rút gọn code completion trước đây.
-Trước khi dùng `async/await`
+Trước khi dùng `async/await`:
 ```sh
 let A = 10
 let B = 20
@@ -173,7 +173,7 @@ cong(a: A, b: B) { result in
 }
 ```
 
-Sau khi dùng
+Sau khi dùng:
 ```sh
     let A = 10
     let B = 20
