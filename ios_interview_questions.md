@@ -5,20 +5,20 @@ iOS interview questions order by timestamp
 # 22/08/2023
 ## Questions
 
-1/ Swift khác Objc như thế nào?
-2/ So sánh class với struct, enum
-3/ ViewController Life cycle
-4/ So sánh weak, unowned
-5/ Sqlite, CoreData, Realm
-6/ Protocol là gì? Cách dùng.
-7/ GCD, Queue type, NSOperation, async await
-8/ URLSession vs Alamofire
-9/ Cách config firebase service,
-10/ Cách config notification,
-11/ Git flow, Merge vs Rebase, fix confict
-12/ Triển khai sprint trong Aglie ntn
-13/ MVVM, MVP, VIPER -> Mục đích, cách dùng
-14/ Denpendency Injection -> Khái niệm
+- Swift khác Objc như thế nào?
+- So sánh class với struct, enum
+- ViewController Life cycle
+- So sánh weak, unowned
+- Sqlite, CoreData, Realm
+- Protocol là gì? Cách dùng.
+- GCD, Queue type, NSOperation, async await
+- URLSession vs Alamofire
+- Cách config firebase service,
+- Cách config notification,
+- Git flow, Merge vs Rebase, fix confict
+- Triển khai sprint trong Aglie ntn
+- MVVM, MVP, VIPER -> Mục đích, cách dùng
+- Denpendency Injection -> Khái niệm
 
 ## Anwsers
 
