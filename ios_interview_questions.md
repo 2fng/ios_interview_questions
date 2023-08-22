@@ -86,6 +86,13 @@ iOS interview questions order by timestamp
 <br></br>
 
 ### Protocol là gì? Cách dùng.
+- Hoạt động như interface/abtract class ở các ngôn ngữ khác
+- Định nghĩa các properties và methods mà các class, struct, enum khi conform phải tự khai báo
+- Có thể extend
+- Có thể được coi như một kiểu dữ liệu
+- Có thể được dùng để phục vụ cho các mục đích như Delegate, Dependency Injection,...
+
+### GCD, Queue type, NSOperation, async await
 > The overriding design goal for Markdown's
 > formatting syntax is to make it as readable
 > as possible. The idea is that a
