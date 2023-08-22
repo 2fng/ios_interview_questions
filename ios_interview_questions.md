@@ -65,6 +65,15 @@ iOS interview questions order by timestamp
 <br></br>
 
 ### So sánh weak, unowned
+| | `weak` | `unowned` |
+|---|---|---|
+| **Định nghĩa** | Không tạo liên kết mạnh tới  instance  nó liên kết  (Không tăng reference count) | Không tạo liên kết mạnh tới  instance  nó liên kết  (Không tăng reference count)  |
+| **Optional or Non-Optional** | Được định nghĩa là optional | Không phải optional - Không thể nil |
+| **Use Case** | Dùng khi thời gian sử dụng của biến ngắn,  hoặc khi chưa chắc chắn biến có thể nil hay không  |Phải đảm bảo biến không thể nil khi define unowned |
+| **Điều gì xảy ra khi object được liên kết bị deallocated?** | Tự động set thành nil| App có thể crash khi cố trỏ đến biến unowned khi object liên kết đã bị deallocated |
+
+<br></br>
+
 > The overriding design goal for Markdown's
 > formatting syntax is to make it as readable
 > as possible. The idea is that a
