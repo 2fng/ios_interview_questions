@@ -21,7 +21,7 @@ iOS interview questions order by timestamp
 - Denpendency Injection -> Khái niệm
 
 ## Anwsers
-
+</br>
 ### Swift khác Objc như thế nào?
 
 | Swift | Objective-C |
@@ -34,7 +34,7 @@ iOS interview questions order by timestamp
 | Có thể dùng để lập trình app từ iOS 7 trở đi| Support các version cũ hơn |
 | Hiện tại Swift là lựa chọn được nhiều người dùng cho các dự án mới hơn Objective-C | Phổ biến hơn trong quá khứ, các dự án cũ | 
 |Sử dụng framework UIKit và SwiftUI| Sử dụng UIKit|
-
+</br>
 ### So sánh class với struct, enum
 |  | Class | Struct | Enum |
 |---|---|---|---|
@@ -46,7 +46,7 @@ iOS interview questions order by timestamp
 | **Có properties, method** | Có | Có | Có |
 | **Có thể Extend** | Có | Có | Có |
 | **Có thể hàm deinit** | Có | Không | Không |
-
+</br>
 ### ViewController Life cycle
 
 > The overriding design goal for Markdown's
