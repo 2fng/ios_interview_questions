@@ -41,7 +41,7 @@ iOS interview questions order by timestamp
 | **Định nghĩa** | Đối tượng hoá vấn đề  để giải quyết  |  Đối tượng hoá vấn đề  để giải quyết   | Là tập hợp một số phần tử được liệt kê và cố định |
 | **Kiểu dữ liệu** | Reference | Value | Value |
 | **Nơi lưu dữ liệu** | Heap | Stack | Stack |
-| **Có khả năng kế thừa** | Có | Không (Tuy nhiên vẫn có thể conform  Protocol) | Không (Tuy nhiên vẫn có thể conform  Protocol) |
+| **Có khả năng kế thừa** | Có | Không| Không |
 | **Có thể conform Protocol** | Có | Có | Có |
 | **Có properties, method** | Có | Có | Có |
 | **Có thể Extend** | Có | Có | Có |
